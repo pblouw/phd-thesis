@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: master.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10856 items from 5000.
+Database file #1: references.bib
+Repeated entry---line 717 of file references.bib
+ : @incollection{Brandom:2010
+ :                           ,
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring Federmeier:2007's extra "year" field
+--line 815 of file references.bib
+I was expecting a `,' or a `}'---line 822 of file references.bib
+ :   
+ :   pages={190-207},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 831 of file references.bib
+ :     
+ :     Journal = {Annual Review of Psychology},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in Kutas:2011
+You've used 126 entries,
+            6951 wiz_defined-function locations,
+            1993 strings with 26776 characters,
+and the built_in function-call counts, 220416 in all, are:
+= -- 28157
+> -- 1821
+< -- 9273
++ -- 8681
+- -- 254
+* -- 12868
+:= -- 37205
+add.period$ -- 574
+call.type$ -- 126
+change.case$ -- 2162
+chr.to.int$ -- 0
+cite$ -- 253
+duplicate$ -- 5936
+empty$ -- 9582
+format.name$ -- 2716
+if$ -- 44212
+int.to.chr$ -- 0
+int.to.str$ -- 378
+missing$ -- 0
+newline$ -- 3024
+num.names$ -- 1049
+pop$ -- 4182
+preamble$ -- 1
+purify$ -- 503
+quote$ -- 0
+skip$ -- 16615
+stack$ -- 0
+substring$ -- 9888
+swap$ -- 3490
+text.length$ -- 405
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 12512
+warning$ -- 1
+while$ -- 989
+width$ -- 0
+write$ -- 3558
+(There were 3 error messages)

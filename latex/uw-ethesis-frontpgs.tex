@@ -1,0 +1,122 @@
+% T I T L E   P A G E
+% -------------------
+% Last updated Nov 1, 2016, by Stephen Carr, IST-Client Services
+% The title page is counted as page `i' but we need to suppress the
+% page number.  We also don't want any headers or footers.
+\pagestyle{empty}
+\pagenumbering{roman}
+
+% The contents of the title page are specified in the "titlepage"
+% environment.
+\begin{titlepage}
+        \begin{center}
+        \vspace*{1.0cm}
+
+        \Huge
+        {\bf Inferential Role Semantics for Natural Language}
+
+        \vspace*{1.0cm}
+
+        \normalsize
+        by \\
+
+        \vspace*{1.0cm}
+
+        \Large
+        Peter Blouw \\
+
+        \vspace*{3.0cm}
+
+        \normalsize
+        A thesis \\
+        presented to the University of Waterloo \\ 
+        in fulfillment of the \\
+        thesis requirement for the degree of \\
+        Doctor of Philosophy \\
+        in \\
+        Philosophy \\
+
+        \vspace*{2.0cm}
+
+        Waterloo, Ontario, Canada, 2017 \\
+
+        \vspace*{1.0cm}
+
+        \copyright\ Peter Blouw 2017 \\
+        \end{center}
+\end{titlepage}
+
+% The rest of the front pages should contain no headers and be numbered using Roman numerals starting with `ii'
+\pagestyle{plain}
+\setcounter{page}{2}
+
+\cleardoublepage % Ends the current page and causes all figures and tables that have so far appeared in the input to be printed.
+% In a two-sided printing style, it also makes the next page a right-hand (odd-numbered) page, producing a blank page if necessary.
+ 
+
+
+% D E C L A R A T I O N   P A G E
+% -------------------------------
+  % The following is a sample Delaration Page as provided by the GSO
+  % December 13th, 2006.  It is designed for an electronic thesis.
+  \noindent
+I hereby declare that I am the sole author of this thesis. This is a true copy of the thesis, including any required final revisions, as accepted by my examiners.
+
+  \bigskip
+  
+  \noindent
+I understand that my thesis may be made electronically available to the public.
+
+\cleardoublepage
+
+% A B S T R A C T
+% ---------------
+
+\begin{center}\textbf{Abstract}\end{center}
+
+The core idea developed in this thesis is that linguistic expressions have meanings in virtue of the fact that their uses license certain predictions in the context of social interaction. When others use particular words and sentences, it allows us to predict what they are likely to do and say next; when we use particular words and sentences, it allows us to have predictable effects on others. A theory of meaning, then, is a theory of \textit{how} language use sustains the implicit predictions that govern social behavior. I argue that developing such a theory requires formalizing various inferential relationships that hold amongst linguistic expressions and non-linguistic perceptions and actions. These relationships define the ``inferential roles'' of linguistic expressions, and the view I develop is accordingly an inferential role semantics for natural language.
+ 
+To design this semantics, I take advantage of recently developed techniques in the field of natural language processing. I introduce a model that learns to automatically assign inferential roles to arbitrary linguistic expressions by learning from examples of how sentences are distributed as premises and conclusions in a space of possible inferences. I then empirically evaluate the model's ability to generate accurate entailments for novel sentences not used as training examples. I argue that this model takes a small but important step towards codifying the meanings of the expressions it manipulates.
+
+The rest of the thesis examines the theoretical implications of this work with respect to debates about the compositionality of language, the relationship between language and cognition, and the relationship between language and the world.  In the case of compositionality, I argue that a semantics for natural language need not be compositional in the way that theorists typically assume. Rather, a good semantics only has to account for how people \textit{generalize} from the inferences licensed by familiar expressions to the inferences licensed by unfamiliar ones. 
+
+In the case of the relationship between language and cognition, I argue against views that treat linguistic expressions as vehicles for transporting thoughts. The problem with these views is that they are incompatible with an inferential role semantics, since an inferential role is not something that gets communicated by a linguistic expression; rather, it is something that determines how people who use a particular linguistic expression are likely to think and behave. 
+
+In the case of relationship between language and the world, it is widely acknowledged that sentences are kinds of things that can be true or false, and words are the kinds of things that refer to objects in the world. I account for these facts by recasting questions about truth conditions and reference relations as questions about the normative statuses of particular linguistic acts. These normative statuses, in turn, are defined in purely inferential terms. 
+
+The overall point of these arguments (and the thesis as a whole) is to make the case in favor of a semantic theory that takes \textit{inference}, rather truth or reference, as its starting point. Such theories are often seen as vague, lacking in rigor, and solipsistic. I conclude with an all-things-considered evaluation of my own theory that demonstrates why such criticisms fail to apply it. 
+
+\cleardoublepage
+
+% A C K N O W L E D G E M E N T S
+% -------------------------------
+
+\begin{center}\textbf{Acknowledgements}\end{center}
+
+TBD - Thanks to all who helped.
+\cleardoublepage
+
+% T A B L E   O F   C O N T E N T S
+% ---------------------------------
+\renewcommand\contentsname{Table of Contents}
+\tableofcontents
+\cleardoublepage
+\phantomsection    % allows hyperref to link to the correct page
+
+% L I S T   O F   T A B L E S
+% ---------------------------
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\cleardoublepage
+\phantomsection		% allows hyperref to link to the correct page
+
+% L I S T   O F   F I G U R E S
+% -----------------------------
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\cleardoublepage
+\phantomsection		% allows hyperref to link to the correct page
+
+% Change page numbering back to Arabic numerals
+\pagenumbering{arabic}
+
