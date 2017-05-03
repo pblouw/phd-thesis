@@ -51,7 +51,7 @@ J(\theta) = - \sum_{i} \sum_{j} t^{(i)}_j \log{ p(c^{(i)}_j | s_i)}
 \end{align}
 
 \noindent
-where $t^{(i)}_j$ is the target distribution over words for the $j^{th}$ node in the $i^{th}$ training example, $p(c^{(i)}_j | s_i)$ is the computed distribution over words for this node given the input sentence $s_i$, and $\theta$ is the set of combined parameters for the encoder and decoder networks. Intuitively, this cost function penalizes model parameters that fail to assign a high joint probability to the collection of word predictions in the decoder that correspond to the correct entailment for a given input sentence. More formally, the training objective is to maximize the log probability of the example entailments provided in the training data. 
+where $t^{(i)}_j$ is the target probability (i.e. 1) for the correct word at the $j^{th}$ node in the $i^{th}$ training example, $p(c^{(i)}_j | s_i)$ is the computed probability for this word given the input sentence $s_i$, and $\theta$ is the set of combined parameters for the encoder and decoder networks. Intuitively, this cost function penalizes model parameters that fail to assign a high joint probability to the collection of word predictions in the decoder that correspond to the correct entailment for a given input sentence. More formally, the training objective is to maximize the log probability of the example entailments provided in the training data. 
 
 \begin{figure*}[t]
 \begin{center}
@@ -173,7 +173,7 @@ Once an input sentence has been passed through the model to generate an entailme
 \begin{center}
 \includegraphics[width=5in]{figures/outward-inf-gen.png}
 \end{center}
-\caption{A model-generated inferential network around the sentence ``Some kids are wrestling on an inflatable raft''. Each inferential transition is the result of generating a predicted entailment after encoding the sentence at the beginning of each arrow. The entire network is generated starting with only the initial sentence at the center of the diagram, which is drawn from the SNLI test set.} 
+\caption{A model-generated inferential network around the sentence ``Some kids are wrestling on an inflatable raft''. Each inferential transition is the result of generating a predicted entailment after encoding the sentence at the beginning of each arrow. The entire network is generated starting with only the initial sentence at the center of the diagram, which is drawn from the SNLI test set. Different decoding trees are used to generate the different entailments from the initial sentence.} 
 \label{inf-gen}
 \end{figure*}
 
